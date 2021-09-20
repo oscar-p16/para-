@@ -69,6 +69,37 @@ print('');
 print("Porcentaje en la edad de 3 o más años: ",categoria3);    
 print('........................................................');
 
+#transito
+n_carro = int(input("digite el numero de carros que ingresaron a la ciudad:"));
+amarillo=0;
+rosado=0;
+rojo=0;
+verde=0;
+azul=0;
+print('')
+for i in range (n_carro):
+    color_c= int(input("digite el ultimo digito de la placa del carro:"));
+    if color_c==1 or color_c==2:
+        amarillo= amarillo+1;
+    if color_c==3 or color_c==4:
+        rosado= rosado+1;
+    if color_c==5 or color_c==6:
+        rojo=rojo+1;
+    if color_c==7 or color_c==8:
+        verde= verde+1;
+    if color_c==9 or color_c==0:
+        azul=azul+1;
+    else:
+        print('');
+        
+print('la cantidad de carros con calcomania amarilla son:', amarillo);
+print('');
+print('la cantidad de carros con calcomania rosada son:', rosado);
+print('');
+print('la cantidad de carros con calcomania roja son:', rojo);
+print('');
+print('la cantidad de carros con calcomania verde son:', verde);
+print('');
+print('la cantidad de carros con calcomania azul son:', azul)
 
-
-    
+print('........................................................');    
