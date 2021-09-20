@@ -102,4 +102,42 @@ print('la cantidad de carros con calcomania verde son:', verde);
 print('');
 print('la cantidad de carros con calcomania azul son:', azul)
 
-print('........................................................');    
+print('........................................................'); 
+
+#empresa
+n_empleados= int(input("digite el numero de empleados:"));
+
+for i in range(n_empleados):
+    horas=int(input('digite el numero de horas trabajadas'));
+    if horas<=40:
+        salario=horas*20;
+    else:
+        horas_extras=horas-40;
+        salario=40*20+(horas_extras*25);
+    print('');
+    print('el salario del trabajador',i+1,'es:''$',salario);    
+
+print('........................................................'); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
