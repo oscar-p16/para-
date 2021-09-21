@@ -222,7 +222,28 @@ else:
 
 print('........................................................');
 
+#tienda
+contenedor=0;
 
+while True:
+    cantidad=int(input('digite la cantidad de este articulo:'));
+    precio=int(input('digite el precio de deste articulo:'));
+    print('');
+    
+    if cantidad == 0:
+            break
+        
+    total=cantidad*precio;
+    contenedor=contenedor+total;
+    
+    print('el total de este articulo es:','$',total);
+    print('');
+    print('si decea salir digite 0 en las dos opciones');
+    
+print('');    
+print('el total de la compra es:','$', contenedor);    
+    
+print('........................................................');
 
 
 
