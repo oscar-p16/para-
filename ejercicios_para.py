@@ -155,13 +155,72 @@ print("El valor minimo es:", min(numero));
 
 print('........................................................');
 
+#peso
+p1=0;
+p2=0;
+p3=0;
+p4=0;
+p5=0;
+p1_inicial=int(input('digite el peso inical de la primera persona:'));
+p2_inicial=int(input('digite el peso inical de la segunda persona:'));
+p3_inicial=int(input('digite el peso inical de la tercera persona:'));
+p4_inicial=int(input('digite el peso inical de la cuarta persona:'));
+p5_inicial=int(input('digite el peso inical de la quinta persona:'));
 
 
+for i in range(10):
+    p1_pesos=int(input("digite el peso de la primera persona en los pesos:"));
+    p1=p1+p1_pesos;
+    promedio=p1/10;
+    diferencia=promedio-p1_inicial;
+if diferencia >0:
+        print('subio de peso la diferencia es de:',diferencia,'kg');
+else:
+        print('bajo de peso la diferencia es de:',diferencia,'kg');        
+ 
+    
+for i in range(10):
+    p2_pesos=int(input("digite el peso de la segunda persona en los pesos:"));
+    p2=p2+p2_pesos;
+    promedio=p2/10;
+    diferencia=promedio-p2_inicial;
+if diferencia >0:
+        print('subio de peso la diferencia es de:',diferencia,'kg');
+else:
+        print('bajo de peso la diferencia es de:',diferencia,'kg');      
 
+    
+for i in range(10):
+    p3_pesos=int(input("digite el peso de la tercera persona en los pesos:"));
+    p3=p3+p3_pesos;
+    promedio=p3/10;
+    diferencia=promedio-p3_inicial;
+if diferencia >0:
+        print('subio de peso la diferencia es de:',diferencia,'kg');
+else:
+        print('bajo de peso la diferencia es de:',diferencia,'kg');      
 
+for i in range(10):
+    p4_pesos=int(input("digite el peso de la cuarta persona en los pesos:"));
+    p4=p4+p4_pesos;
+    promedio=p4/10;
+    diferencia=promedio-p4_inicial;
+if diferencia >0:
+        print('subio de peso la diferencia es de:',diferencia,'kg');
+else:
+        print('bajo de peso la diferencia es de:',diferencia,'kg');  
 
+for i in range(10):
+    p5_pesos=int(input("digite el peso de la quinta persona en los pesos:"));
+    p5=p5+p5_pesos;
+    promedio=p5/10;
+    diferencia=promedio-p5_inicial;
+if diferencia >0:
+        print('subio de peso la diferencia es de:',diferencia,'kg');
+else:
+        print('bajo de peso la diferencia es de:',diferencia,'kg');  
 
-
+print('........................................................');
 
 
 
