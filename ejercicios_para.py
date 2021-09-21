@@ -245,8 +245,45 @@ print('el total de la compra es:','$', contenedor);
     
 print('........................................................');
 
+#teatro
+p_asiento=int(input('digite el precio de las entradas sin descuento:'));
+personas=int(input('digite el numero de personas dentro del teatro:'));
+c=0;
+for i in range(personas):
+    edad_p=int(input('digite la edad de los clientes'));
+    if edad_p<5:
+        print('no se permite su ingreso');
+        
+    if edad_p>=5 and edad_p<=14:
+        descuento_p=p_asiento*0.35;
+        print('');
+        print('el descuento realizado a esta persona es de','$',descuento_p);
+        c=c+descuento_p;
+        
+    if edad_p>=15 and edad_p<=19:
+        descuento_p=p_asiento*0.25;
+        print('');
+        print('el descuento realizado a esta persona es de','$',descuento_p);
+        c=c+descuento_p;
+        
+    if edad_p>=20 and edad_p<=45:
+        descuento_p=p_asiento*0.10;
+        print('');
+        print('el descuento realizado a esta persona es de','$',descuento_p);
+        c=c+descuento_p;
+        
+    if edad_p>=46 and edad_p<=65:
+        descuento_p=p_asiento*0.25;
+        print('');
+        print('el descuento realizado a esta persona es de','$',descuento_p);
+        c=c+descuento_p;
+     
+    if  edad_p>=66:
+        descuento_p=p_asiento*0.35;
+        print('');
+        print('el descuento realizado a esta persona es de','$',descuento_p);
+        c=c+descuento_p;
+print('');        
+print('el teatro dejo de recibir','$',c,'en descuentos');
 
-
-
-
-
+print('........................................................');
