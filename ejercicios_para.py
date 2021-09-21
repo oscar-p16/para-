@@ -287,3 +287,39 @@ print('');
 print('el teatro dejo de recibir','$',c,'en descuentos');
 
 print('........................................................');
+
+#vendedores
+for i in range(100):
+    v = int(input("Digite cuanto dinero en millones obtivo el vendedor: "))
+    if v <= 20:
+        comision = v * 0.10
+        print('Su comisión es de:','$',comision,)
+    if v> 20 and v < 40:
+        comision = v * 0.15
+        print('Su comisión es de:','$',comision,)
+    if v >= 40 and v < 80:
+        comision = v * 0.20
+        print('Su comisión es de:','$',comision,)
+    if v >= 80 and v < 160:
+        comision = v * 0.25
+        print('Su comisión es de:','$',comision,)
+    if v >= 160:
+        comision = v * 0.30
+        print('Su comisión es de:','$',comision,)
+    else: 
+        print('No recibe comisiones')
+        
+print('........................................................');
+
+
+
+
+
+
+
+
+
+
+
+
+
