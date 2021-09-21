@@ -311,9 +311,33 @@ for i in range(100):
         
 print('........................................................');
 
+#votos
+import random
+p1= 0;
+p2= 0;
+p3= 0;
+for i in range(50000):
+    votos=random.randint(1,3);
+    if votos==1:
+        p1+=1;
+    if votos==2:
+        p2+=1;
+    else:
+       p3+=1;
+if p1==p2 and p1==p3:
+    print('empate');
+if p1>p2 and p1>p3:
+    print('gano el primer candidato');
+if p2>p1 and p2>p3:
+    print('gano el segundo candidato');
+if p3>p2 and p3>p1:
+    print('gano el tercer candidato');
 
+print('votos total del primer candidato:',p1);
+print('votos total del segundo candidato:',p2);
+print('votos total del tercer candidato:',p3);
 
-
+print('........................................................');
 
 
 
