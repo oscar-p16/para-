@@ -143,9 +143,17 @@ print('el porcentaje de edad de los alumnos que son mujeres es',promedio2,'%');
 
 print('........................................................');
 
+#numero menor
+n=int(input('dijite la cantidad de numeros:'));
+numero= [];
+for i in range(n):
+    numero.append(int(input('dijite el numero:')));
+print('');
+print('el arreglo es:',numero);      
+print('');
+print("El valor minimo es:", min(numero));
 
-
-
+print('........................................................');
 
 
 
