@@ -119,8 +119,29 @@ for i in range(n_empleados):
 
 print('........................................................'); 
 
+#alumnos
+edad1=0;
+edad2=0;
 
+hombres=int(input('digite el numero de los estudiantes que son barones:'));
+mujeres=int(input('digite el numero de los estudiamtes que son mujeres:'));
 
+for i in range(hombres):
+    edad_h=int(input('ingrese la edad del estudiante:'));
+    edad1= edad1+edad_h;
+for i in range(mujeres):
+    edad_m=int(input('ingrese la edad del estudiante:'));
+    edad2=edad2+edad_m;
+
+promedio1= edad1/hombres;
+promedio2= edad2/mujeres;
+
+print('');
+print('el porcentaje de edad de los alumnos que son hombres es',promedio1,'%');
+print('');
+print('el porcentaje de edad de los alumnos que son mujeres es',promedio2,'%');    
+
+print('........................................................');
 
 
 
